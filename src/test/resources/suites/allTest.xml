@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Все тесты">
+    <test name="Тесты Корзины">
+        <classes>
+            <class name="hooks.Hooks"></class>
+            <class name="test.BasketPageTest"></class>
+        </classes>
+    </test>
+    <test name="Тесты домашней страницы">
+        <classes>
+            <class name="test.HomePageTest"></class>
+        </classes>
+    </test>
+    <test name="Тесты листинга">
+        <classes>
+            <class name="test.ListingPageTest"></class>
+        </classes>
+    </test>
+    <test name="Тесты страницы сравнения">
+        <classes>
+            <class name="test.ComparisonPageTest"></class>
+        </classes>
+    </test>
+    <test name="Тесты страницы избранных товаров">
+        <classes>
+            <class name="test.FavoritePageTest"></class>
+        </classes>
+    </test>
+</suite>
