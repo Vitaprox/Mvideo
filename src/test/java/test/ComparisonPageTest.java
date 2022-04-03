@@ -9,7 +9,7 @@ import steps.ComparisonPageSteps;
 import steps.HeaderSteps;
 import steps.ListingSteps;
 
-
+@Listeners(CustomListener.class)
 public class ComparisonPageTest extends Hooks {
     private HeaderSteps headerSteps = new HeaderSteps();
     private ListingSteps listingSteps = new ListingSteps();
