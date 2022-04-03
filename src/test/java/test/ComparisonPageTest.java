@@ -17,6 +17,7 @@ public class ComparisonPageTest extends Hooks {
     private ListingSteps listingSteps = new ListingSteps();
     private ComparisonPageSteps comparisonPageSteps = new ComparisonPageSteps();
 
+    //8
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Description("Добавляем три товара в сравнение, заходим на страницу сравнения и смотрим то ли добавилось, сверяем названия")
