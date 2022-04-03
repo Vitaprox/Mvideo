@@ -27,7 +27,7 @@ public class ListingSteps {
         Assert.assertTrue(displayDropdown, "Выпадающий список не отображается");
     }
 
-    @Step("Проверка, что выпающем списке правильный текст")
+    @Step("Проверка, что выпадающем списке правильный текст")
     public void checkTextSortDropdownMostPopular() {
         String expectedText = "Сначала популярные";
         String actualText = listingPage.getTextSortDropdown();
