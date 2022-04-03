@@ -9,7 +9,7 @@ import steps.FavoritePageSteps;
 import steps.HeaderSteps;
 import steps.ListingSteps;
 
-
+@Listeners(CustomListener.class)
 public class FavoritePageTest extends Hooks {
     private HeaderSteps headerSteps = new HeaderSteps();
     private ListingSteps listingSteps = new ListingSteps();
