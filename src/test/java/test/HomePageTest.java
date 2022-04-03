@@ -15,9 +15,10 @@ public class HomePageTest extends Hooks {
     private HeaderSteps headerSteps = new HeaderSteps();
     private HomePageSteps homePageSteps = new HomePageSteps();
 
+    //1
     @Test
     @Severity(SeverityLevel.CRITICAL)
-    @Description("Проверяем активны ли видны и активны ли кнопки хедера: Статус заказа, Войти, Сравнения, Понравившиеся и Корзина")
+    @Description("Проверяем видны и активны ли кнопки хедера: Статус заказа, Войти, Сравнения, Понравившиеся и Корзина")
     public void checkHeaderButtonsActiveAndDisplayed(){
         headerSteps.checkThatStatusButtonIsActive();
         headerSteps.checkThatStatusButtonIsDisplayed();
@@ -30,7 +31,8 @@ public class HomePageTest extends Hooks {
         headerSteps.checkThatBasketButtonIsNotActive();
         headerSteps.checkThatBasketButtonIsDisplayed();
     }
-
+    
+    //2
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Проверяем, активируется ли кнопка корзины, когда в неё добавляется товар")
@@ -40,6 +42,7 @@ public class HomePageTest extends Hooks {
         headerSteps.checkBasketCount();
     }
 
+    //7
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Проверяем работает ли окно авторизации и активные в нем кнопки и ссылки")
@@ -51,6 +54,7 @@ public class HomePageTest extends Hooks {
         headerSteps.checkEntityFormIIsDisplayed();
     }
 
+    //10
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Description("Проверяем окно изменения города, выбираем другой город")
