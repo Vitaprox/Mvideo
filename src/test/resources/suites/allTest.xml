@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Все тесты">
-    <test name="Тесты Корзины">
+    <test name="Тесты корзины">
         <classes>
             <class name="test.BasketPageTest"></class>
         </classes>
