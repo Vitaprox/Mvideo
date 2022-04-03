@@ -82,7 +82,7 @@ public class HeaderSteps {
         Assert.assertEquals(actualBasketCount, expectedBasketCount, "Цифра у корзины не соотвтствует действительности");
     }
 
-    @Step("Проверка получилось ли кликнуть и перейти на страницу корзины")
+    @Step("Проверка получилось ли кликнуть на кнопку корзины и перейти на её страницу")
     public void clickBasketButton() {
         headerPage.clickBasketButton();
         String expectedUrl = "https://www.mvideo.ru/cart";
