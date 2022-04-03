@@ -17,6 +17,7 @@ public class FavoritePageTest extends Hooks {
     private ListingSteps listingSteps = new ListingSteps();
     private FavoritePageSteps favoritePageSteps = new FavoritePageSteps();
 
+    //9
     @Test
     @Severity(SeverityLevel.NORMAL)
     @Description("Добавляем три товара в понравившиеся, заходим на страницу понравившихся товаров и смотрим то ли добавилось, сверяем названия")
