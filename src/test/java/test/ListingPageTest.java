@@ -15,6 +15,7 @@ public class ListingPageTest extends Hooks {
     private HeaderSteps headerSteps = new HeaderSteps();
     private ListingSteps listingSteps = new ListingSteps();
 
+    //5
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Проверяем работает ли поиск и правильные ли товары выводит")
@@ -25,6 +26,7 @@ public class ListingPageTest extends Hooks {
         listingSteps.checkNameProductsContainsApple();
     }
 
+    //6
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Проверяем работает ли поиск и сортировка цены по убыванию, проверяем правильные ли товары выводит")
