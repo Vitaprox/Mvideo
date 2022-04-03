@@ -17,7 +17,7 @@ public class BasketPageTest extends Hooks {
     private HomePageSteps homePageSteps = new HomePageSteps();
     private BasketPageSteps basketPageSteps = new BasketPageSteps();
 
-
+    //3
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Добавляем один товар, заходим в корзину и смотрим добавилось ли")
@@ -32,6 +32,7 @@ public class BasketPageTest extends Hooks {
         basketPageSteps.checkPriceBasket();
     }
 
+    //4
     @Test
     @Severity(SeverityLevel.CRITICAL)
     @Description("Добавляем два товара, заходим в корзину и смотрим добавилось ли, сверяем цены")
