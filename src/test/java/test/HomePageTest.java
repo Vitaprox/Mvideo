@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import steps.HeaderSteps;
 import steps.HomePageSteps;
 
-
+@Listeners(CustomListener.class)
 public class HomePageTest extends Hooks {
     private HeaderSteps headerSteps = new HeaderSteps();
     private HomePageSteps homePageSteps = new HomePageSteps();
