@@ -61,7 +61,6 @@ public class ListingSteps {
      */
     @Step("Клик на кнопки сравнения у первых трех товаров")
     public void clickThreeProductComparison() {
-        CartProductsElements.clearCartList();
         listingPage.writeCartProductsComparison();
         listingPage.clickProductIcon(1);
         headerPage.shouldBeComparisonCount("1");
@@ -78,7 +77,6 @@ public class ListingSteps {
      */
     @Step("Клик на кнопки понравилось у первых трех товаров")
     public void clickThreeProductFavorite() {
-        CartProductsElements.clearCartList();
         listingPage.writeCartProductsFavorite();
         listingPage.clickProductIcon(1);
         headerPage.shouldBeFavoriteCount("1");

@@ -16,6 +16,7 @@ public class CartProductsElements {
     public static ArrayList<CartProductsElements> products = new ArrayList<>();
 
     public static void createCarts(ElementsCollection name, ElementsCollection price, ElementsCollection buy) {
+        clearCartList();
         int count = name.size();
         for (int i = 0; i < count; i++) {
             products.add(new CartProductsElements(name.get(i).text(), Integer.parseInt(price.get(i).text().replaceAll("\\D+", "")), buy.get(i)));

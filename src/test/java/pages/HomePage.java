@@ -61,6 +61,7 @@ public class HomePage {
     }
 
     public void clickBuyButtonDayProducts() {
+        CartProductsElements.clearCartList();
         CartProductsElements.products.add(new CartProductsElements(nameProductDay.text(), Integer.parseInt(priceProductsDay.text().replaceAll("\\D+", "")), buttonsDay));
         buttonsDay
                 .scrollIntoView("{block: 'center'}")
@@ -70,9 +71,8 @@ public class HomePage {
     /**
      * Товары дня отображаются
      */
-    public boolean dayProductsIsDisplayed() {
+    public void dayProductsIsVisible() {
         dayProductsBlock.shouldBe(Condition.visible);
-        return dayProductsBlock.isDisplayed();
     }
 
     /**

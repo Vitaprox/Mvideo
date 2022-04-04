@@ -15,13 +15,11 @@ public class HomePageSteps {
 
     @Step("Проверка отображется ли блок Товары дня")
     public void checkDayProductsIsDisplayed() {
-        boolean displayProdDay = homePage.dayProductsIsDisplayed();
-        Assert.assertTrue(displayProdDay, "Товары дня не отображаются");
+        homePage.dayProductsIsVisible();
     }
 
     @Step("Клик по кнопке купить у товара и проверка клика")
     public void clickBuyButtonDayProducts() {
-        CartProductsElements.clearCartList();
         homePage.clickBuyButtonDayProducts();
         headerPage.shouldBeBasketCount("1");
     }
@@ -35,7 +33,6 @@ public class HomePageSteps {
 
     @Step("Клики по товарам и проверки, что клик прошел")
     public void clickMostViewProducts() {
-        CartProductsElements.clearCartList();
         homePage.writeProductsMostView();
         homePage.clickProductMostView(1);
         headerPage.shouldBeBasketCount("1");

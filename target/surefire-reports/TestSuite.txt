@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 122.783 s <<< FAILURE! - in TestSuite
-test.BasketPageTest.transitionBasket  Time elapsed: 5.227 s  <<< FAILURE!
-java.lang.AssertionError: Заголовок 'Моя корзина' не отображается. Возможно из-за того, что в корзине не было товаров на момент её открытия expected [true] but found [false]
-	at test.BasketPageTest.transitionBasket(BasketPageTest.java:28)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.04 s - in TestSuite
